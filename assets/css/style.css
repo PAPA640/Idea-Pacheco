@@ -317,6 +317,7 @@ img{
   .content-log-img img{
     display: block;
     width: 80px;
+    margin-top: 1rem;
     border-radius: 50%;
     margin-right: 3rem;
   }
