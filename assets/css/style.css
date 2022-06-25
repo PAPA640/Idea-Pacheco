@@ -312,11 +312,22 @@ img{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    animation-name: image;
+    animation-duration: 1.2s;
+    transform: translate(0);
   }
+
+  @keyframes image {
+    0%{transform: scale(1);}
+    50%{transform: scale(.5);}
+    100%{transform: scale(1);}
+  }
+
 
   .content-log-img img{
     display: block;
     width: 80px;
+    margin-top: 1rem;
     border-radius: 50%;
     margin-right: 3rem;
   }
@@ -710,6 +721,14 @@ img{
 .mi-imagen img{
   width: 450px;
   height: 600px;
+  animation-name: zoom;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+@keyframes zoom{
+  0%{transform: scale(.1);}
+  100%{transform: scale(1);}
 }
 
 /* article */
